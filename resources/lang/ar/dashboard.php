@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'title'            => 'لوحة التحكم',
+    'docs'             => 'الملفات',
+    'users'            => 'المستخدمون',
+    'btn_dashboard'    => 'اللوحة',
+    'btn_upload'       => 'رفع جديد',
+    'documents_mgmt'   => 'إدارة المستندات',
+    'col_title'        => 'العنوان',
+    'col_status'       => 'الحالة',
+    'col_lang'         => 'اللغة',
+    'col_date'         => 'التاريخ',
+    'col_actions'      => 'الإجراءات',
+    'status' => [
+        'processed'  => 'مُعالج',
+        'processing' => 'قيد المعالجة',
+        'failed'     => 'فشل',
+        'pending'    => 'معلّق',
+    ],
+    'view'             => 'عرض',
+    'edit'             => 'تعديل',
+    'delete'           => 'حذف',
+    'empty'            => 'لا يوجد مستندات بعد.',
+    'empty_hint'       => 'ارفع أول مستند للبدء',
+    'back'             => 'رجوع',
+    'confirm_delete_title' => 'حذف المستند',
+    'confirm_delete_text'  => 'هذا الإجراء لا يمكن التراجع عنه',
+    'confirm_yes'      => 'نعم، احذف',
+    'confirm_cancel'   => 'إلغاء',
+];

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html[dir="rtl"] .rtl-left-6 { left: 1.5rem !important; right: auto !important; }
+#toggle-show:checked ~ .relative .secure {
+  -webkit-text-security: none;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .navbar-start {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .dropdown-start {
+  left: auto;
+  right: 0;
+}
+
+[dir="rtl"] .menu {
+  text-align: right;
+}
+
+/* إصلاح للقوائم المنسدلة في RTL */
+[dir="rtl"] .dropdown-content {
+  left: auto;
+  right: 0;
+}
+
+.chat-btn-ripple {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 50;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.ripple {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.19);
+    animation: ripple-wave 2s infinite cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+.ripple.r2 {
+    animation-delay: .6s;
+}
+.ripple.r3 {
+    animation-delay: 1.2s;
+}
+@keyframes ripple-wave {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    60% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(2.1);
+        opacity: 0;
+    }
+}
+.chat-btn-inner {
+    position: relative;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: #20529e;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.13), 0 0 0 6px rgba(32,82,158,0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.chat-btn-inner img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}

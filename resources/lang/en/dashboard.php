@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'title'            => 'Dashboard',
+    'docs'             => 'Docs',
+    'users'            => 'Users',
+    'btn_dashboard'    => 'Dashboard',
+    'btn_upload'       => 'Upload new',
+    'documents_mgmt'   => 'Documents Management',
+    'col_title'        => 'Title',
+    'col_status'       => 'Status',
+    'col_lang'         => 'Lang',
+    'col_date'         => 'Date',
+    'col_actions'      => 'Actions',
+    'status' => [
+        'processed'  => 'processed',
+        'processing' => 'processing',
+        'failed'     => 'failed',
+        'pending'    => 'pending',
+    ],
+    'view'             => 'View',
+    'edit'             => 'Edit',
+    'delete'           => 'Delete',
+    'empty'            => 'No documents yet.',
+    'empty_hint'       => 'Upload your first document to get started',
+    'back'             => 'Back',
+    'confirm_delete_title' => 'Delete document',
+    'confirm_delete_text'  => 'This action cannot be undone',
+    'confirm_yes'      => 'Yes, delete',
+    'confirm_cancel'   => 'Cancel',
+];
